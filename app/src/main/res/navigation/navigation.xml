@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.thrive.ui.main.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_down"
+            app:exitAnim="@anim/slide_up"/>
+
+        <action
+            android:id="@+id/action_mainFragment_to_createBookFragment"
+            app:destination="@id/createBookFragment"
+            app:enterAnim="@anim/slide_down"
+            app:exitAnim="@anim/slide_up"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.thrive.ui.detail.DetailFragment"
+        android:label="@string/detail_fragment_label"
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="bookId"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_detailFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/createBookFragment"
+        android:name="com.example.thrive.ui.main.CreateBookFragment"
+        android:label="@string/create_book_fragment_label"
+        tools:layout="@layout/create_book_fragment">
+        <action
+            android:id="@+id/action_createBookFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>

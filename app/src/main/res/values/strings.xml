@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Thrive</string>
+
+    <!-- Text Placeholders -->
+    <string name="book_title">Book Title</string>
+    <string name="book_author">Book Author</string>
+    <string name="book_publisher">Book Publisher</string>
+    <string name="book_categories">Book Categories</string>
+    <string name="book_last_checkout">Name @ Date</string>
+    <string name="checkout">Checkout</string>
+
+    <!-- Static Text Labels -->
+    <string name="main_fragment_label">Books</string>
+    <string name="detail_fragment_label">Detail</string>
+    <string name="create_book_fragment_label">Add Book</string>
+    <string name="enter_name_label">Enter in your name:</string>
+    <string name="submit_button_label">Submit</string>
+    <string name="cancel_button_label">Cancel</string>
+    <string name="book_last_checkout_label">Last Checked Out:</string>
+
+    <!-- Miscellaneous -->
+    <string name="snackbar_api_error">Error in making network request!</string>
+    <string name="go_back">Go Back</string>
+    <string name="main_app_bar_title">Main</string>
+    <string name="detail_app_bar_title">Detail</string>
+    <string name="create_app_bar_title">Add Book</string>
+
+</resources>
