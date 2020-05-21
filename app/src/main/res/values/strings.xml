@@ -21,8 +21,5 @@
     <!-- Miscellaneous -->
     <string name="snackbar_api_error">Error in making network request!</string>
     <string name="go_back">Go Back</string>
-    <string name="main_app_bar_title">Main</string>
-    <string name="detail_app_bar_title">Detail</string>
-    <string name="create_app_bar_title">Add Book</string>
-
+    
 </resources>
