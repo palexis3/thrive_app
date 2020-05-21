@@ -16,7 +16,7 @@ class BooksAdapter(private val booksList: ArrayList<Book>, private val clickList
     class BooksViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         fun bind(book: Book, clickListener: (Book) -> Unit) {
             itemView.apply {
-                bookAuthor.text = book.author
+                bookAuthor.text = book.author.trim()
                 bookTitle.text = book.title
                 setOnClickListener { clickListener(book) }
             }
